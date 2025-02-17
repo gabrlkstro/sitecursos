@@ -58,20 +58,5 @@ a {
 .img-dev{
     position: relative;
     margin-left: 65%;
-    margin-top: -16%;
-}
-
-.entrar{
-    background-color: white;
-    height: 400px;
-    width: 300px;
-    border-radius: 30px;
-    margin-left: 560px;
-}
-
-.entrar h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1d224f;
-    font-size: 40px;
-    text-align: center;
+    margin-top: -6%;
 }
