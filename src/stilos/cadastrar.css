@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #30388D, #1d224f);
+}
+
+.entrar {
+    width: 300px;
+    padding: 30px;
+    height: 470px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'koulen', sans-serif;
+}
+
+.entrar button {
+    margin-bottom: 20px;
+}
+
+.entrar h1 {
+    font-size: 40px;
+    color: rgba(34, 43, 138, 1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: rgba(199, 223, 254, 1);
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #4297e1, #3e6d96);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #283e51, #4b79a1);
+}
+
+.links {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1a2a6c;
+}
+
+.links a {
+    text-decoration: none;
+    color: #1a2a6c;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #4b79a1;
+}
+
+.menu {
+    display: flex;
+    gap: 130px;
+    left: 0;
+    padding: 20px 0;
+    padding-left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #30388D;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
