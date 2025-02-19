@@ -19,7 +19,8 @@ body {
     font-weight: bold;
 }
 .container {
-    width: 80%;
+    width: 50%;
+    height: 50%;
     margin: auto;
     padding-top: 20px;
     position: relative;
@@ -45,8 +46,6 @@ input[type="text"] {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     justify-content: center;
-}
-.cursos {
     background: white;
     border-radius: 10px;
     padding: 15px;
@@ -54,8 +53,9 @@ input[type="text"] {
     color: black;
 }
 .cursos img {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
 }
 .button {
     background: #3572EF;
