@@ -7,6 +7,7 @@ html, body{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #30388D, #1d224f);
+    font-weight: bold;
 }
 h1{
     color: white;
