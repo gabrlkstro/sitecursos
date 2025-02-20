@@ -26,3 +26,49 @@ body, html {
     text-decoration: none;
     color: white;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    background-color: #2d2d8c;
+    max-width: 10px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+
+.meuscursos button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.certificados button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+
+.assinaturas button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.editarperfil button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.historicodecompras button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.formasdepagamento button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
