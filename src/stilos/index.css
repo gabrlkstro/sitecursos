@@ -58,5 +58,29 @@ a {
 .img-dev{
     position: relative;
     margin-left: 65%;
-    margin-top: -6%;
+    margin-top: -10%;
+}
+
+.footer {
+    background-color: white;
+    width: 100%;
+    color: black;
+    padding: 30px;
+    display: flex;
+    margin-top: 190px;
+    justify-content: space-around;
+}
+
+.footer div {
+    max-width: 250px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
 }
