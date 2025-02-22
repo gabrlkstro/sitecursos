@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #30388D, #1d224f);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 130px;
+    left: 0;
+    padding: 20px 0;
+    padding-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    background-color: #2d2d8c;
+    max-width: 10px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+
+.meuscursos button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.certificados button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+
+.assinaturas button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.editarperfil button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.historicodecompras button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+
+.formasdepagamento button{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1E2A78, #3B4CCA);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 10px 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.container {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding-top: 20px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+.search-bar {
+    margin: 20px 0;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+}
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: black;
+}
+.cursos img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+.button {
+    background: #3572EF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
