@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/stilos/usuario.css">
     <script src="src/scripts/script.js"></script>
 </head>
 <body>
+    <img src="src/imgs/mky.png" alt="Logo" class="logo">
     <div class="menu">
-        <a href="index.html">Início</a>
-        <a href="#">Suporte</a>
-        <a href="#">Sobre</a>
+        <a href="index.html">Inicio</a>
+        <a href="suporte.html">Suporte</a>
+        <a href="entrar.html">Entrar</a>
+        <a href="cadastrar.html">Cadastre-se</a>
         <a href="usuario.html">Meu perfil</a>
     </div>
-
     <div class="aluno">
         <img src="src/imgs/usuario/alunoimg.png" alt="alunoimg" class="alunoimg">
         <p class="nomealuno">Lenivaldo</p>
@@ -23,46 +25,46 @@
 
     <div class="container">
         <div class="meuscursos">
-            <button>
+            <button onclick="window.location.href='data_list.html'">
                 <img src="src/imgs/usuario/play.png" alt="play"> <br>
                 Meus Cursos
             </button>
         </div>
     
         <div class="certificados">
-            <button>
+            <button onclick="window.location.href=''">
                 <img src="src/imgs/usuario/document.png" alt=""> <br>
                 Certificados
             </button>
         </div>
     
         <div class="assinaturas">
-            <button>
+            <button onclick="window.location.href=''">
                 <img src="src/imgs/usuario/list-check.png" alt=""> <br>
                 Assinaturas
             </button>
         </div>
     
         <div class="editarperfil">
-            <button>
+            <button onclick="window.location.href='formulario_edicao.html'">
                 <img src="src/imgs/usuario/pencil.png" alt=""> <br>
                 Editar Perfil
             </button>
         </div>
     
         <div class="historicodecompras">
-            <button>
+            <button onclick="window.location.href=''">
                 <img src="src/imgs/usuario/shopping-cart.png" alt=""> <br>
                 Histórico de Compras
             </button>
         </div>
     
         <div class="formasdepagamento">
-            <button>
+            <button onclick="window.location.href=''">
                 <img src="src/imgs/usuario/credit-card.png" alt=""> <br>
                 Formas de Pagamento
             </button>
-        </div> 
+        </div>
     </div>
 </body>
 </html>

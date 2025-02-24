@@ -13,14 +13,27 @@ body, html {
     background: linear-gradient(to bottom, #30388D, #1d224f);
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
 .cadastro {
     width: 300px;
     padding: 30px;
-    height: 420px;
+    height: 390px;
     background-color: white;
     border-radius: 20px;
     text-align: center;
     font-family: 'koulen', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.cadastro:hover {
+    transform: scale(1.05);
 }
 
 .cadastro button {
@@ -83,24 +96,29 @@ form button:hover {
 
 .menu {
     display: flex;
+    justify-content: center;
     gap: 130px;
-    left: 0;
     padding: 20px 0;
-    padding-left: 35%;
     font-family: Arial, Helvetica, sans-serif;
     background: #30388D;
 }
 
 .menu a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #4297e1;
 }
 
 .footer {
     background: linear-gradient(to bottom, #1d224f, #30388D);
     color: white;
     padding: 40px 20px 20px 20px;
-    margin-top: 40px;
+    margin-top: 0;
     border-top: 2px solid #4297e1;
 }
 

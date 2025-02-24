@@ -8,17 +8,17 @@ body, html {
 
 .menu {
     display: flex;
+    justify-content: center;
     gap: 130px;
-    left: 0;
     padding: 20px 0;
-    padding-left: 40%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: koulen;
     background: #30388D;
 }
 
 .menu a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -126,4 +126,12 @@ body, html {
     .footer-section {
         min-width: 100%;
     }
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
 }

@@ -7,11 +7,20 @@ body {
     padding: 0;
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
 .menu {
     display: flex;
     justify-content: center;
     gap: 130px;
     padding: 20px 0;
+    font-family: koulen;
     background: #30388D;
 }
 

@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/stilos/entrar.css">
     <link rel="stylesheet" href="src/stilos/footer.css">
-    <link rel="stylesheet" href="">
+    <script src="src/scripts/script.js"></script>
 </head>
 <body>
+    <img src="src/imgs/mky.png" alt="Logo" class="logo">
     <div class="menu">
         <a href="index.html">Início</a>
-        <a href="#">Sobre</a>
+        <a href="suporte.html">Suporte</a>
         <a href="entrar.html">Entrar</a>
         <a href="cadastrar.html">Cadastre-se</a>
         <a href="usuario.html">Meu perfil</a>
@@ -20,9 +21,9 @@
     <div class="container">
         <div class="entrar">
             <h1>Entrar</h1>
-            <form id="loginForm">
-                <input type="text" placeholder="Login" required>
-                <input type="password" placeholder="Senha" required>
+            <form id="loginForm" onsubmit="event.preventDefault(); redirecionarParaCursos();">
+                <input type="text" placeholder="Login" required onfocus="this.style.borderColor='#4297e1';">
+                <input type="password" placeholder="Senha" required onfocus="this.style.borderColor='#4297e1';">
                 <button type="submit" id="entrar">Entrar</button>
             </form>
             <div class="links">
@@ -64,6 +65,10 @@
             <p>&copy; 2025 Plataforma de Cursos. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="src/scripts/script.js"></script>
+    <script>
+        function redirecionarParaCursos() {
+            window.location.href = "cursos.html";
+        }
+    </script>
 </body>
 </html>

@@ -5,30 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/stilos/entrar.css">
+    <link rel="stylesheet" href="src/stilos/cadastrar.css">
 </head>
 <body>
+    <img src="src/imgs/mky.png" alt="Logo" class="logo">
     <div class="menu">
         <a href="index.html">Início</a>
-        <a href="#">Sobre</a>
+        <a href="suporte.html">Suporte</a>
         <a href="entrar.html">Entrar</a>
         <a href="cadastrar.html">Cadastre-se</a>
         <a href="usuario.html">Meu perfil</a>
     </div>
     <div class="container">
-        <div class="entrar">
+        <div class="cadastro">
             <h1>Cadastrar</h1>
-            <form id="cadastroForm">
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="password" placeholder="Senha" required>
+            <form id="cadastroForm" onsubmit="event.preventDefault(); redirecionarParaCursos();">
+                <input type="text" placeholder="Nome" required onfocus="this.style.borderColor='#4297e1';">
+                <input type="email" placeholder="E-mail" required onfocus="this.style.borderColor='#4297e1';">
+                <input type="password" placeholder="Senha" required onfocus="this.style.borderColor='#4297e1';">
                 <button type="submit" id="cadastrar">Cadastrar</button>
             </form>
             <div class="links">
-                <a href="entrar.html">Já tem uma conta? Entrar</a>
+                <a href="entrar.html">JÁ TEM UMA CONTA? Entrar</a>
             </div>
         </div>
     </div>
-    <script src="src/scripts/cadastrar.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Certificação</h3>
+                <p>Certificação Cisco</p>
+                <p>Certificação Microsoft</p>
+                <p>Certificação AWS</p>
+                <p>Ver todas as certificações</p>
+            </div>
+            <div class="footer-section">
+                <h3>Desenvolvimento Web</h3>
+                <p>JavaScript</p>
+                <p>React JS</p>
+                <p>Angular</p>
+                <p>Java</p>
+            </div>
+            <div class="footer-section">
+                <h3>Data Science</h3>
+                <p>Python</p>
+                <p>Machine Learning</p>
+                <p>ChatGPT</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <p>Quem somos</p>
+                <p>Carreiras</p>
+                <p>Fale conosco</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Plataforma de Cursos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function redirecionarParaCursos() {
+            window.location.href = "cursos.html";
+        }
+    </script>
 </body>
 </html>

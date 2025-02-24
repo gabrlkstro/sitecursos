@@ -34,6 +34,14 @@ body, html {
     margin-bottom: 20px;
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -89,17 +97,17 @@ form button:hover {
 
 .menu {
     display: flex;
+    justify-content: center;
     gap: 130px;
-    left: 0;
     padding: 20px 0;
-    padding-left: 35%;
     font-family: Arial, Helvetica, sans-serif;
     background: #30388D;
 }
 
 .menu a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -123,7 +131,7 @@ form button:hover {
     background: linear-gradient(to bottom, #1d224f, #30388D);
     color: white;
     padding: 40px 20px 20px 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     border-top: 2px solid #4297e1;
 }
 
