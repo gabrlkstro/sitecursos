@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     background: linear-gradient(to bottom, #30388D, #1d224f);
+    font-weight: bold;
 }
 
 .container {
@@ -28,6 +29,11 @@ body, html {
 .menu a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #4297e1;
 }
 
 .container div button {
@@ -55,19 +61,98 @@ body, html {
     margin-bottom: 5px;
 }
 
-.aluno{
+.aluno {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 21%;
     margin-top: 80px;
-    
 }
 
-.nomealuno{
+.nomealuno {
     font-weight: bold;
 }
 
-.alunoimg{
+.alunoimg {
     width: 60px;
     border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    background: linear-gradient(to bottom, #1d224f, #30388D);
+    color: white;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #4297e1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #4297e1;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #cccccc;
+}
+
+.footer-section p:hover {
+    color: #4297e1;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #4297e1;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
 }

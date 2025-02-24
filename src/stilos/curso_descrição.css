@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #30388D, #1d224f);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    padding: 20px 0;
+    background: #30388D;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #4297e1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.curso-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.curso-imagem {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.curso-header h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.descricao {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.descricao p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.aulas {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.aulas h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1d224f;
+}
+
+.aulas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aulas ul li {
+    margin: 10px 0;
+}
+
+.aulas ul li a {
+    color: #3572EF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.aulas ul li a:hover {
+    color: #283e51;
+    text-decoration: underline;
+}
+
+.button {
+    background: #3572EF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: #283e51;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .curso-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curso-imagem {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .curso-header h1 {
+        font-size: 28px;
+    }
+
+    .descricao, .aulas {
+        padding: 15px;
+    }
+
+    .aulas ul li a {
+        font-size: 16px;
+    }
+}
+
+.footer {
+    background: linear-gradient(to bottom, #1d224f, #30388D);
+    color: white;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #4297e1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #4297e1;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #cccccc;
+}
+
+.footer-section p:hover {
+    color: #4297e1;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #4297e1;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+}

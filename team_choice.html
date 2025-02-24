@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha da Equipe</title>
+    <link rel="stylesheet" href="./src/stilos/styles.css">
+    <link rel="stylesheet" href="./src/stilos/menu.css">
+    <link rel="stylesheet" href="./src/stilos/footer.css">
+    <script src="src/scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="#">Suporte</a>
+            <a href="#">Sobre</a>
+            <a href="usuario.html">Meu perfil</a>
+        </div>
+        <div class="menu-dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">☰</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#">Bootcamps</a>
+                <a href="#">Cursos de Inglês</a>
+                <a href="#">Linguagens</a>
+                <a href="#">Certificações</a>
+                <a href="#">Suporte</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Escolha sua Equipe</h1>
+        <div class="team-buttons">
+            <button onclick="escolherEquipe('Equipe 1')">Equipe 1</button>
+            <button onclick="escolherEquipe('Equipe 2')">Equipe 2</button>
+            <button onclick="escolherEquipe('Equipe 3')">Equipe 3</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Certificação</h3>
+                <p>Certificação Cisco</p>
+                <p>Certificação Microsoft</p>
+                <p>Certificação AWS</p>
+                <p>Ver todas as certificações</p>
+            </div>
+            <div class="footer-section">
+                <h3>Desenvolvimento Web</h3>
+                <p>JavaScript</p>
+                <p>React JS</p>
+                <p>Angular</p>
+                <p>Java</p>
+            </div>
+            <div class="footer-section">
+                <h3>Data Science</h3>
+                <p>Python</p>
+                <p>Machine Learning</p>
+                <p>ChatGPT</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <p>Quem somos</p>
+                <p>Carreiras</p>
+                <p>Fale conosco</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Plataforma de Cursos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function escolherEquipe(equipe) {
+            alert(`Você escolheu a ${equipe}`);
+        }
+    </script>
+</body>
+</html>
