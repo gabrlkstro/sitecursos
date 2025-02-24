@@ -1,38 +1,26 @@
-function validarLogin() {
-    let usuario = document.getElementById("usuario").value;
-    let senha = document.getElementById("senha").value;
-
-    if (usuario.length < 3 || senha.length < 5) {
-        alert("Usuário ou senha inválidos!");
-        return false;
-    }
-
-    alert("Login realizado com sucesso!");
-    return true;
+function toggleDropdown() {
+    const dropdownContent = document.getElementById("dropdownContent");
+    dropdownContent.classList.toggle("show");
 }
 
-function validarCadastro() {
-    let email = document.getElementById("email").value;
-    let nome = document.getElementById("nome").value;
-    let senha = document.getElementById("senhaCadastro").value;
-    
-    let emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-    if (!emailValido) {
-        alert("Email inválido!");
-        return false;
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-button')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     }
+};
 
-    if (nome.length < 3) {
-        alert("Nome muito curto!");
-        return false;
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    const login = document.querySelector('input[type="text"]').value;
+    const senha = document.querySelector('input[type="password"]').value;
+
+    if (!login || !senha) {
+        alert('Por favor, preencha todos os campos.');
+        event.preventDefault();
     }
-
-    if (senha.length < 6) {
-        alert("A senha deve ter pelo menos 6 caracteres!");
-        return false;
-    }
-
-    alert("Cadastro realizado com sucesso!");
-    return true;
-}
+});
