@@ -17,17 +17,28 @@ body {
 
 .menu {
     display: flex;
+<<<<<<< HEAD
+    justify-content: flex-end;
+    padding: 10px 20px;
+=======
     justify-content: center;
     gap: 130px;
     padding: 20px 0;
     background: #30388D;
+>>>>>>> 937c829d810574b41ca9b42fc5f9c21d799f8dd8
 }
 
 .menu a {
     color: white;
     text-decoration: none;
+<<<<<<< HEAD
+    margin: 0 75px;
+    font-weight: bold;
+    padding-left: 5%;
+=======
     font-weight: bold;
     transition: color 0.3s;
+>>>>>>> 937c829d810574b41ca9b42fc5f9c21d799f8dd8
 }
 
 .menu a:hover {
@@ -74,6 +85,12 @@ input[type="text"] {
     text-align: center;
     color: black;
 }
+<<<<<<< HEAD
+.cursos img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+=======
 
 .curso {
     display: flex;
@@ -85,6 +102,7 @@ input[type="text"] {
     border-radius: 10px;
     background-color: #f9f9f9;
     transition: transform 0.3s, box-shadow 0.3s;
+>>>>>>> 937c829d810574b41ca9b42fc5f9c21d799f8dd8
 }
 
 .curso:hover {
