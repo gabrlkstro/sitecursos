@@ -9,14 +9,14 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end;
-    
     padding: 10px 20px;
 }
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 75px;
     font-weight: bold;
+    padding-left: 5%;
 }
 .container {
     width: 50%;
@@ -53,7 +53,7 @@ input[type="text"] {
     color: black;
 }
 .cursos img {
-    width: 180px;
+    width: 150px;
     height: 180px;
     object-fit: cover;
 }
